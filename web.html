@@ -116,7 +116,7 @@
                     avec la commande suivante:
                     <br>
                     <code>
-                        sudo nano /etc/apache2/sites-available/monsite.conf
+                        sudo nano /etc/apache2/sites-available/sae.conf
                     </code><br>
                     Dans laquelle nous avons insérés le contenu suivant:
                     <br>
@@ -136,14 +136,14 @@
                   Puis nous allons dermarer l'hote virtuel de notre site 
                   et recharger apache avec les commandes suivantes<br>
                     <code>
-                        sudo a2ensite monsite.conf<br>
+                        sudo a2ensite sae.conf<br>
                         sudo systemctl reload apache2
                     </code>
                 </p>
                 <p> 
                   Nous allons maintenant creer le dossier de notre site avec la commandes<br>
                     <code>
-                        sudo mkdir -p /var/www/monsite
+                        sudo mkdir -p /var/www/sae
                     </code>
                 </p>
                 <p> 
@@ -153,7 +153,7 @@
                      notre site et éventuellement écrire ou modifier des fichiers
                      <br>
                       <code>
-                        sudo chown -R www-data:www-data /var/www/monsite
+                        sudo chown -R www-data:www-data /var/www/sae
                       </code>
                 </p>
                 <p> 
